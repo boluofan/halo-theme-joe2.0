@@ -65,10 +65,16 @@
     <script src="${BASE_RES_URL}/source/js/min/joe.archives.min.js?v=${theme.version!}"></script>
   </#if>
   <#if type == 'post'>
+	<#-- 移除原有js，引入自定义js 解决api key问题 
     <script src="${BASE_RES_URL}/source/js/min/joe.post.min.js?v=${theme.version!}"></script>
+	-->
+	<script src="https://cdn.jsdelivr.net/gh/boluofan/halo-theme-joe2.0@latest/source/js/min/joe.post.min.js"></script>
   </#if>
   <#if type == 'journals'>
+    <#-- 移除原有js，引入自定义js 解决api key问题 
     <script src="${BASE_RES_URL}/source/js/min/joe.journals.min.js?v=${theme.version!}"></script>
+	-->
+	<script src="https://cdn.jsdelivr.net/gh/boluofan/halo-theme-joe2.0@latest/source/js/min/joe.journals.min.js"></script>
   </#if>
   <#if type == 'photos'>
     <script src="${BASE_RES_URL}/source/js/min/joe.photos.min.js?v=${theme.version!}"></script>
